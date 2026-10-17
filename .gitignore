@@ -1,0 +1,32 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.rsuser
+*.sln.docstates
+
+# Compilación
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+# NuGet
+packages/
+*.nupkg
+!**/packages/build/
+
+# Pruebas y herramientas
+TestResults/
+*.log
+.vscode/
+
+# Archivos del sistema
+Thumbs.db
+.DS_Store
+
+# Configuración local con datos sensibles (no subir contraseñas)
+*.local.config
