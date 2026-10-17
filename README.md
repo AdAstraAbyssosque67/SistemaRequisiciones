@@ -27,10 +27,15 @@ SistemaRequisiciones/
 │   └── 02_PruebasBaseDeDatos.sql    Verificación y pruebas de la base de datos
 ├── Docs/
 │   └── Decisiones-de-diseno.md      Supuestos, transiciones de estado y arquitectura
-└── src/                             Solución de Visual Studio (se agrega en las siguientes fases)
+└── src/
+    ├── SistemaRequisiciones.sln
+    ├── SistemaRequisiciones.Entidades/
+    ├── SistemaRequisiciones.Datos/
+    ├── SistemaRequisiciones.Negocio/
+    └── SistemaRequisiciones.Presentacion/   (por ahora solo App.config; los formularios llegan en la Fase 6)
 ```
 
-Proyectos previstos dentro de `src/`:
+Proyectos dentro de `src/`:
 
 | Proyecto | Responsabilidad |
 |---|---|
@@ -47,6 +52,12 @@ Proyectos previstos dentro de `src/`:
 
 > Guarda siempre los scripts con codificación UTF-8 con BOM para que SSMS muestre bien las tildes.
 
+## Cómo abrir la solución
+
+1. Abre `src/SistemaRequisiciones.sln` en Visual Studio 2022 (necesitas la carga de trabajo "Desarrollo de escritorio con .NET", que incluye .NET Framework 4.8).
+2. Compila con **Compilar > Compilar solución** (Ctrl+Mayús+B).
+3. La cadena de conexión y la tasa de impuesto están en `src/SistemaRequisiciones.Presentacion/App.config`; la aplicación de Windows Forms la usará desde la Fase 6.
+
 ## Flujo de trabajo con Git
 
 - Rama principal: `main` (siempre estable).
@@ -58,8 +69,8 @@ Proyectos previstos dentro de `src/`:
 
 - [x] Fase 1: análisis y diseño
 - [x] Fase 2: base de datos
-- [ ] Fase 3: entidades y patrones
-- [ ] Fase 4: capa de datos
+- [x] Fase 3: entidades y patrones
+- [x] Fase 4: capa de datos
 - [ ] Fase 5: capa de negocio
 - [ ] Fase 6: interfaz gráfica
 - [ ] Fase 7: ReportViewer

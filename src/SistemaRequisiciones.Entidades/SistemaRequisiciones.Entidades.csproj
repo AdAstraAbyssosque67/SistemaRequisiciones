@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>SistemaRequisiciones.Entidades</RootNamespace>
+    <AssemblyName>SistemaRequisiciones.Entidades</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+
+  <!-- Las capas Datos y Negocio pueden crear y modificar entidades; Presentacion no. -->
+  <ItemGroup>
+    <InternalsVisibleTo Include="SistemaRequisiciones.Datos" />
+    <InternalsVisibleTo Include="SistemaRequisiciones.Negocio" />
+  </ItemGroup>
+
+</Project>
