@@ -75,6 +75,6 @@ Proyectos dentro de `src/`:
 - [x] Fase 4: capa de datos
 - [x] Fase 5: capa de negocio
 - [x] Fase 6: interfaz gráfica
-- [ ] Fase 7: ReportViewer
+- [x] Fase 7: ReportViewer
 - [ ] Fase 8: integración y pruebas
 - [ ] Fase 9: documentación académica
