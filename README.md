@@ -32,7 +32,7 @@ SistemaRequisiciones/
     ├── SistemaRequisiciones.Entidades/
     ├── SistemaRequisiciones.Datos/
     ├── SistemaRequisiciones.Negocio/
-    └── SistemaRequisiciones.Presentacion/   (por ahora solo App.config; los formularios llegan en la Fase 6)
+    └── SistemaRequisiciones.Presentacion/   (formularios de Windows Forms)
 ```
 
 Proyectos dentro de `src/`:
@@ -56,7 +56,9 @@ Proyectos dentro de `src/`:
 
 1. Abre `src/SistemaRequisiciones.sln` en Visual Studio 2022 (necesitas la carga de trabajo "Desarrollo de escritorio con .NET", que incluye .NET Framework 4.8).
 2. Compila con **Compilar > Compilar solución** (Ctrl+Mayús+B).
-3. La cadena de conexión y la tasa de impuesto están en `src/SistemaRequisiciones.Presentacion/App.config`; la aplicación de Windows Forms la usará desde la Fase 6.
+3. Haz clic derecho en el proyecto `SistemaRequisiciones.Presentacion` y elige **Establecer como proyecto de inicio**; luego ejecuta con F5.
+4. La cadena de conexión y la tasa de impuesto están en `src/SistemaRequisiciones.Presentacion/App.config`.
+5. Para editar un formulario, haz doble clic en su archivo (por ejemplo `FrmRequisicion.cs`) y se abre en el Designer.
 
 ## Flujo de trabajo con Git
 
@@ -71,8 +73,8 @@ Proyectos dentro de `src/`:
 - [x] Fase 2: base de datos
 - [x] Fase 3: entidades y patrones
 - [x] Fase 4: capa de datos
-- [ ] Fase 5: capa de negocio
-- [ ] Fase 6: interfaz gráfica
+- [x] Fase 5: capa de negocio
+- [x] Fase 6: interfaz gráfica
 - [ ] Fase 7: ReportViewer
 - [ ] Fase 8: integración y pruebas
 - [ ] Fase 9: documentación académica

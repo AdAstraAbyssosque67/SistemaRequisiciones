@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaRequisiciones.Datos"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaRequisiciones.Negocio", "SistemaRequisiciones.Negocio\SistemaRequisiciones.Negocio.csproj", "{2C5B7E41-6A3D-4F0B-9E1A-3D8F5B7A1C03}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaRequisiciones.Presentacion", "SistemaRequisiciones.Presentacion\SistemaRequisiciones.Presentacion.csproj", "{2C5B7E41-6A3D-4F0B-9E1A-3D8F5B7A1C04}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{2C5B7E41-6A3D-4F0B-9E1A-3D8F5B7A1C03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C5B7E41-6A3D-4F0B-9E1A-3D8F5B7A1C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C5B7E41-6A3D-4F0B-9E1A-3D8F5B7A1C03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C5B7E41-6A3D-4F0B-9E1A-3D8F5B7A1C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C5B7E41-6A3D-4F0B-9E1A-3D8F5B7A1C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C5B7E41-6A3D-4F0B-9E1A-3D8F5B7A1C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C5B7E41-6A3D-4F0B-9E1A-3D8F5B7A1C04}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

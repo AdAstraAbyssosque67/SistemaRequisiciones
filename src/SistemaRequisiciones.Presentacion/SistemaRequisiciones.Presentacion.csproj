@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>SistemaRequisiciones.Presentacion</RootNamespace>
+    <AssemblyName>SistemaRequisiciones</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <!-- Control ReportViewer para Windows Forms (reportes .rdlc). Se restaura solo al compilar. -->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ReportingServices.ReportViewerControl.Winforms" Version="150.*" />
+  </ItemGroup>
+
+  <!-- El reporte viaja dentro del ejecutable como recurso incrustado. -->
+  <ItemGroup>
+    <EmbeddedResource Include="Reportes\RequisicionAprobada.rdlc" />
+  </ItemGroup>
+
+  <!-- La presentación solo conoce Negocio y Entidades; nunca referencia a Datos. -->
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaRequisiciones.Negocio\SistemaRequisiciones.Negocio.csproj" />
+    <ProjectReference Include="..\SistemaRequisiciones.Entidades\SistemaRequisiciones.Entidades.csproj" />
+  </ItemGroup>
+
+  <!-- Estas entradas hacen que Visual Studio abra cada formulario en el Designer. -->
+  <ItemGroup>
+    <Compile Update="FrmPrincipal.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="FrmPrincipal.Designer.cs"><DependentUpon>FrmPrincipal.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="FrmPrincipal.resx"><DependentUpon>FrmPrincipal.cs</DependentUpon></EmbeddedResource>
+
+    <Compile Update="FrmRequisicion.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="FrmRequisicion.Designer.cs"><DependentUpon>FrmRequisicion.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="FrmRequisicion.resx"><DependentUpon>FrmRequisicion.cs</DependentUpon></EmbeddedResource>
+
+    <Compile Update="FrmConsultaRequisiciones.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="FrmConsultaRequisiciones.Designer.cs"><DependentUpon>FrmConsultaRequisiciones.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="FrmConsultaRequisiciones.resx"><DependentUpon>FrmConsultaRequisiciones.cs</DependentUpon></EmbeddedResource>
+
+    <Compile Update="FrmArticulos.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="FrmArticulos.Designer.cs"><DependentUpon>FrmArticulos.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="FrmArticulos.resx"><DependentUpon>FrmArticulos.cs</DependentUpon></EmbeddedResource>
+
+    <Compile Update="FrmReporteRequisicion.cs"><SubType>Form</SubType></Compile>
+    <Compile Update="FrmReporteRequisicion.Designer.cs"><DependentUpon>FrmReporteRequisicion.cs</DependentUpon></Compile>
+    <EmbeddedResource Update="FrmReporteRequisicion.resx"><DependentUpon>FrmReporteRequisicion.cs</DependentUpon></EmbeddedResource>
+  </ItemGroup>
+
+</Project>
